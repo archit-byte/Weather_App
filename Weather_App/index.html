@@ -5,9 +5,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/original-16bf0e33c3996b1b1f15e1c7544440c2.mp4" type="video/mp4">
+  </video>
 
   <div class="container">
-    <h1>Weather Application</h1>
+    <h1>🌤️Weather Application</h1>
     
     <div class="search-section">
       <input type="text" id="city-input" placeholder="Enter city name">
@@ -18,6 +21,40 @@
       <p id="city-name">City:-</p>
       <p id="temperature">Temperature:-</p>
       <p id="weather-description">Description:-</p>
+
+
+    </div>
+
+    <div class="forecast">
+      <h2>3-Day Weather Forecast 🏖️</h2>
+      <div class="forecast-days">
+        <div class="day-card">
+          <div class="day-date">Sunday, May 25</div>
+          <div class="day-weather-icon">
+          <img src="assets/cloudy.png" alt="Weather Icon" height="30px" width="30px">
+          </div>
+          <div class="day-temperature">25°C</div>
+          <div class="day-description">Partly Cloudy</div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-date">Monday, May 26</div>
+          <div class="day-weather-icon">
+          <img src="assets/thunderstorm.png" alt="Weather Icon" height="30px" width="30px">
+          </div>
+          <div class="day-temperature">22°C</div>
+          <div class="day-description">Rainy</div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-date">Tuesday, May 27</div>
+          <div class="day-weather-icon">
+          <img src="assets/sun.png" alt="Weather Icon" height="30px" width="30px">
+          </div>
+          <div class="day-temperature">29°C</div>
+          <div class="day-description">Clear Sky</div>
+        </div>        
+      </div>
     </div>
   </div>
 
